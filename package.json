@@ -1,19 +1,19 @@
 {
-  "name": "@uniswap/v3-sdk",
+  "name": "@aerodrome/v3-sdk",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "version": "3.11.0",
-  "description": "⚒️ An SDK for building applications on top of Uniswap V3",
+  "description": "⚒️ An SDK for building applications on top of Aerodrome V3",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-v3-sdk.git",
+  "repository": "https://github.com/etaques/aerodrome-v3-sdk.git",
   "keywords": [
-    "uniswap",
+    "aerodrome",
     "ethereum"
   ],
   "module": "dist/v3-sdk.esm.js",
