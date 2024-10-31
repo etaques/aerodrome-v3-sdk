@@ -196,6 +196,19 @@ export abstract class NonfungiblePositionManager {
     }
   }
 
+  public static getTickSpacing(fee: number): number {
+    if (fee === 100) return 1;
+    if (fee === 400) return 8;
+    if (fee === 500) return 10;
+    if (fee === 2500) return 50;
+    if (fee === 3000) return 60;
+    if (fee === 6000) return 120;
+    if (fee === 10000) return 200;
+    if (fee === 20000) return 400;
+
+    throw new Error("Unsupported pool fee.");
+  }
+
   public static addCallParameters(position: Position, options: AddLiquidityOptions): MethodParameters {
     invariant(JSBI.greaterThan(position.liquidity, ZERO), 'ZERO_LIQUIDITY')
 
@@ -233,7 +246,7 @@ export abstract class NonfungiblePositionManager {
           {
             token0: position.pool.token0.address,
             token1: position.pool.token1.address,
-            fee: position.pool.fee,
+            tickSpacing: this.getTickSpacing(position.pool.fee),
             tickLower: position.tickLower,
             tickUpper: position.tickUpper,
             amount0Desired: toHex(amount0Desired),
@@ -241,7 +254,8 @@ export abstract class NonfungiblePositionManager {
             amount0Min,
             amount1Min,
             recipient,
-            deadline
+            deadline,
+            sqrtPriceX96: position.pool.sqrtPriceX96
           }
         ])
       )
