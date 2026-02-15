@@ -255,7 +255,7 @@ export abstract class NonfungiblePositionManager {
             amount1Min,
             recipient,
             deadline,
-            sqrtPriceX96: position.pool.sqrtPriceX96
+            sqrtPriceX96: position.pool.sqrtRatioX96
           }
         ])
       )
