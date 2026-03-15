@@ -13,7 +13,7 @@ export enum FeeAmount {
   LOW = 500,
   MEDIUMLOW = 2500,
   MEDIUM = 3000,
-  HIGHLOW = 6000,
+  HIGHLOW = 5000,
   HIGH = 10000,
   HIGHEST = 20000
 }
@@ -27,7 +27,7 @@ export const TICK_SPACINGS: { [amount in FeeAmount]: number } = {
   [FeeAmount.LOW]: 10,
   [FeeAmount.MEDIUMLOW]: 50,
   [FeeAmount.MEDIUM]: 60,
-  [FeeAmount.HIGHLOW]: 120,
+  [FeeAmount.HIGHLOW]: 100,
   [FeeAmount.HIGH]: 200,
   [FeeAmount.HIGHEST]: 400
 }
