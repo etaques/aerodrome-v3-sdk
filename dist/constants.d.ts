@@ -10,7 +10,7 @@ export declare enum FeeAmount {
     LOW = 500,
     MEDIUMLOW = 2500,
     MEDIUM = 3000,
-    HIGHLOW = 6000,
+    HIGHLOW = 5000,
     HIGH = 10000,
     HIGHEST = 20000
 }
