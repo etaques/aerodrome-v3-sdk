@@ -159,7 +159,7 @@ var POOL_INIT_CODE_HASH = '0xffb9af9ea6d9e39da47392ecc7055277b9915b8bfc9f83f1058
   FeeAmount[FeeAmount["LOW"] = 500] = "LOW";
   FeeAmount[FeeAmount["MEDIUMLOW"] = 2500] = "MEDIUMLOW";
   FeeAmount[FeeAmount["MEDIUM"] = 3000] = "MEDIUM";
-  FeeAmount[FeeAmount["HIGHLOW"] = 6000] = "HIGHLOW";
+  FeeAmount[FeeAmount["HIGHLOW"] = 5000] = "HIGHLOW";
   FeeAmount[FeeAmount["HIGH"] = 10000] = "HIGH";
   FeeAmount[FeeAmount["HIGHEST"] = 20000] = "HIGHEST";
 })(exports.FeeAmount || (exports.FeeAmount = {}));
@@ -168,7 +168,7 @@ var POOL_INIT_CODE_HASH = '0xffb9af9ea6d9e39da47392ecc7055277b9915b8bfc9f83f1058
  */
 
 
-var TICK_SPACINGS = (_TICK_SPACINGS = {}, _TICK_SPACINGS[exports.FeeAmount.LOWEST] = 1, _TICK_SPACINGS[exports.FeeAmount.LOWMEDIUM] = 8, _TICK_SPACINGS[exports.FeeAmount.LOW] = 10, _TICK_SPACINGS[exports.FeeAmount.MEDIUMLOW] = 50, _TICK_SPACINGS[exports.FeeAmount.MEDIUM] = 60, _TICK_SPACINGS[exports.FeeAmount.HIGHLOW] = 120, _TICK_SPACINGS[exports.FeeAmount.HIGH] = 200, _TICK_SPACINGS[exports.FeeAmount.HIGHEST] = 400, _TICK_SPACINGS);
+var TICK_SPACINGS = (_TICK_SPACINGS = {}, _TICK_SPACINGS[exports.FeeAmount.LOWEST] = 1, _TICK_SPACINGS[exports.FeeAmount.LOWMEDIUM] = 8, _TICK_SPACINGS[exports.FeeAmount.LOW] = 10, _TICK_SPACINGS[exports.FeeAmount.MEDIUMLOW] = 50, _TICK_SPACINGS[exports.FeeAmount.MEDIUM] = 60, _TICK_SPACINGS[exports.FeeAmount.HIGHLOW] = 100, _TICK_SPACINGS[exports.FeeAmount.HIGH] = 200, _TICK_SPACINGS[exports.FeeAmount.HIGHEST] = 400, _TICK_SPACINGS);
 
 var NEGATIVE_ONE = /*#__PURE__*/JSBI.BigInt(-1);
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);

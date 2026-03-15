@@ -158,7 +158,7 @@ var FeeAmount;
   FeeAmount[FeeAmount["LOW"] = 500] = "LOW";
   FeeAmount[FeeAmount["MEDIUMLOW"] = 2500] = "MEDIUMLOW";
   FeeAmount[FeeAmount["MEDIUM"] = 3000] = "MEDIUM";
-  FeeAmount[FeeAmount["HIGHLOW"] = 6000] = "HIGHLOW";
+  FeeAmount[FeeAmount["HIGHLOW"] = 5000] = "HIGHLOW";
   FeeAmount[FeeAmount["HIGH"] = 10000] = "HIGH";
   FeeAmount[FeeAmount["HIGHEST"] = 20000] = "HIGHEST";
 })(FeeAmount || (FeeAmount = {}));
@@ -167,7 +167,7 @@ var FeeAmount;
  */
 
 
-var TICK_SPACINGS = (_TICK_SPACINGS = {}, _TICK_SPACINGS[FeeAmount.LOWEST] = 1, _TICK_SPACINGS[FeeAmount.LOWMEDIUM] = 8, _TICK_SPACINGS[FeeAmount.LOW] = 10, _TICK_SPACINGS[FeeAmount.MEDIUMLOW] = 50, _TICK_SPACINGS[FeeAmount.MEDIUM] = 60, _TICK_SPACINGS[FeeAmount.HIGHLOW] = 120, _TICK_SPACINGS[FeeAmount.HIGH] = 200, _TICK_SPACINGS[FeeAmount.HIGHEST] = 400, _TICK_SPACINGS);
+var TICK_SPACINGS = (_TICK_SPACINGS = {}, _TICK_SPACINGS[FeeAmount.LOWEST] = 1, _TICK_SPACINGS[FeeAmount.LOWMEDIUM] = 8, _TICK_SPACINGS[FeeAmount.LOW] = 10, _TICK_SPACINGS[FeeAmount.MEDIUMLOW] = 50, _TICK_SPACINGS[FeeAmount.MEDIUM] = 60, _TICK_SPACINGS[FeeAmount.HIGHLOW] = 100, _TICK_SPACINGS[FeeAmount.HIGH] = 200, _TICK_SPACINGS[FeeAmount.HIGHEST] = 400, _TICK_SPACINGS);
 
 var NEGATIVE_ONE = /*#__PURE__*/JSBI.BigInt(-1);
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
